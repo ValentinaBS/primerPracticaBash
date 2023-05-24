@@ -1,0 +1,41 @@
+top (^m) - memoria
+top (^t) - tiempo
+top (^o) - estado
+top - 01:31:47 up  4:02,  0 users,  load average: 16.40
+Tasks:   5 total,   1 running,   4 sleeping,   0 stoppe
+%Cpu(s): 58.6 us, 36.3 sy,  0.0 ni,  3.0 id,  0.4 wa,  
+MiB Mem :  64308.8 total,  14912.0 free,  19885.9 used,
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+      1 runner    20   0 1769020  33564  18992 S   1.0 
+     16 runner    20   0    8004   4404   3412 S   0.0 
+     33 runner    20   0   10.9g  69596  38192 S   0.0 
+   1549 runner    20   0    8012   4516   3520 S   0.0 
+   1614 runner    20   0    9116   3680   3136 R   0.0
+-cat: Muestra el contenido completo de uno o varios archivos, sin interacciones.
+-more: Ve el contenido de los archivos página a página, con opciones básicas de navegación.
+-less: Ve el contenido de los archivos, con más funcionalidades que more.
+~/ejercicios$ du -h > archivos.txt
+~/ejercicios$ head archivos.txt
+8.0K    ./.cache/replit/nix
+0   ./.cache/replit/modules
+16K ./.cache/replit
+16K ./.cache
+28K .
+~/ejercicios$ cat archivos.txt > info_txt.txt
+~/ejercicios$ rm info_txt.txt
+
+Manual
+Comando: ls
+Descripción: Lista los archivos y directorios.
+Uso: ls [opciones] [ruta]
+Ej: ls -h /home
+
+Comando: kill
+Descripción: Se utiliza para enviar una señal a un proceso para terminarlo, usualmente cuando no responde.
+Uso: kill [opciones] PID
+Ej: kill -9 63772
+
+~/ejercicios$ cp archivos.txt copia.txt
+~/ejercicios$ rm archivos.txt

@@ -1,0 +1,31 @@
+~/ejercicios$ pwd
+/home/runner/ejercicios
+~/ejercicios$ ls
+main.sh  replit.nix
+~/ejercicios$ stat main.sh
+  File: main.sh
+  Size: 0           Blocks: 0          IO Block: 4096   regular empty file
+Device: 0,7571  Inode: 266         Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/  runner)   Gid: ( 1000/  runner)
+Access: 2023-05-21 23:41:47.052336161 +0000
+Modify: 2023-05-21 23:41:47.052336161 +0000
+Change: 2023-05-24 01:23:11.248641847 +0000
+ Birth: 2023-05-24 01:23:11.248641847 +0000
+~/ejercicios$ du -h
+8.0K    ./.cache/replit/nix
+0   ./.cache/replit/modules
+16K ./.cache/replit
+16K ./.cache
+24K .
+~/ejercicios$ du -h > peso_archivos.txt
+~/ejercicios$ ls -l
+total 8
+-rw-r--r-- 1 runner runner   0 May 21 23:41 main.sh
+-rw-r--r-- 1 runner runner  90 May 24 01:26 peso_archivos.txt
+-rw-r--r-- 1 runner runner 110 Apr  7 02:30 replit.nix
+~/ejercicios$ mkdir nueva_carpeta
+~/ejercicios$ cd nueva_carpeta
+~/ejercicios/nueva_carpeta$ ps > procesos.txt
+~/ejercicios/nueva_carpeta$ cd -
+/home/runner/ejercicios
+~/ejercicios$ ls > mis_archivos.txt
